@@ -1,5 +1,5 @@
    raspberrypi-utilization-display
-   NOOOO - UPDATE THIS    https://code.google.com/p/raspberrypi-utilization-display/
+   https://github.com/tedhale/utilization.git
 
 requirements:
   wiringPi library  ( go to  http://wiringpi.com/ for more info )
