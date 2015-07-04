@@ -1,0 +1,5 @@
+#!/bin/sh -e
+#
+echo "   uninstall the Utilization LED Display daemon"
+rm /usr/local/bin/utilization
+update-rc.d -f utilization remove

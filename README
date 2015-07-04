@@ -1,0 +1,17 @@
+   raspberrypi-utilization-display
+   NOOOO - UPDATE THIS    https://code.google.com/p/raspberrypi-utilization-display/
+
+requirements:
+  wiringPi library  ( go to  http://wiringpi.com/ for more info )
+  
+to build:
+  make clean
+  make 
+
+to install:
+  sudo ./install
+
+to un-install
+  sudo ./uninstall
+
+

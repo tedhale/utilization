@@ -1,0 +1,29 @@
+#!/bin/sh -e
+#
+#  install the Utilization LED Display daemon
+
+
+if [ -e /usr/local/utilization ]
+then
+   echo "Error: utilization appears to already be installed"
+   echo "  do"
+   echo "     sudo ./uninstall"
+   echo "  and try again"
+   echo " "
+   exit 1
+else
+   echo "  Install Utilization LED Display daemon"
+   cp utilization /usr/local/bin
+   chmod 755 /usr/local/bin/utilization
+   cp utilization.sysVscript /etc/init.d/utilization
+   chmod 755 /etc/init.d/utilization
+   update-rc.d utilization defaults
+   cp example-utilization.cfg /etc/default/utilization.cfg
+   echo " "
+   echo "NOTE: "
+   echo "  You must edit the configuration file "
+   echo "     /etc/default/utilization.cfg "
+   echo "  to suit your needs"
+   echo " "
+   exit 0
+fi
